@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+    <title>TwitchKeys</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header__container">
+        <h1 class="header">TwitchKeys Menu</h1>
+        <h2 class="header__message"></h2>
+      </header>
+      <form id="keys-form" class="form">
+        <div class="form__inputs">
+          <div class="input__container">
+            <label class="label" for="input1">Key 1:</label>
+            <input id="input1" class="input" name="key1" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input2">Key 2:</label>
+            <input id="input2" class="input" name="key2" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input3">Key 3:</label>
+            <input id="input3" class="input" name="key3" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input4">Key 4:</label>
+            <input id="input4" class="input" name="key4" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input5">Key 5:</label>
+            <input id="input5" class="input" name="key5" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input6">Key 6:</label>
+            <input id="input6" class="input" name="key6" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input7">Key 7:</label>
+            <input id="input7" class="input" name="key7" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input8">Key 8:</label>
+            <input id="input8" class="input" name="key8" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input9">Key 9:</label>
+            <input id="input9" class="input" name="key9" type="text" maxlength="32"/>
+          </div>
+          <div class="input__container">
+            <label class="label" for="input10">Key 10:</label>
+            <input id="input10" class="input" name="key10" type="text" maxlength="32"/>
+          </div>
+        </div>
+        <div class="form__buttons">
+          <button id="hotkeys__clear--all" type="button" class="clear__button primary__button">Clear All</button>
+          <button id="hotkeys__save" type="button" class="save__button primary__button">Save</button>
+          <div class="form__buttons__confirm hidden">
+            <p class="form__buttons__confirm__message">Are you sure you want to clear all?</p>
+            <button id="hotkeys__clear--cancel" type="button" class="clear__button primary__button">Cancel</button>
+            <button id="hotkeys__clear--confirm" type="button" class="save__button primary__button">Clear All</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

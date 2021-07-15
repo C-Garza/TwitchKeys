@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+
+  "name": "TwitchKeys",
+  "version": "0.1",
+  "description": "An extension to add hot keys for twitch.tv emotes in chat.",
+  "icons": {
+    "128": "./images/TwitchKeys.png"
+  },
+
+  "content_scripts": [{
+    "css": ["content.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.twitch.tv/*"],
+    "run_at": "document_idle"
+  }],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "./images/TwitchKeys.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["content.html"],
+      "matches": ["https://www.twitch.tv/*"],
+      "extension_ids": []
+    }
+  ],
+  "permissions": ["storage"]
+}
