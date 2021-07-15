@@ -49,7 +49,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  min-height: 100%;
 }
 .tkextension__container--visible {
   display: block;
