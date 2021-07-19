@@ -8,6 +8,7 @@ let clearButton = document.getElementById("hotkeys__clear--all");
 let formButtonsMessage = document.querySelector(".form__buttons__confirm");
 let headerTimeout = null;
 
+// TRIGGER HEADER MESSAGE
 const triggerHeaderMessage = (msg) => {
   if(headerMessage.classList.contains("header__message--active")) headerMessage.classList.remove("header__message--active");
   window.clearTimeout(headerTimeout);
@@ -17,6 +18,7 @@ const triggerHeaderMessage = (msg) => {
   headerTimeout = window.setTimeout(() => {headerMessage.classList.remove("header__message--active")}, 2000);
 };
 
+// HYDRATE MENU WITH VALUES
 const getInitValues = () => {
   for(let i = 0; i < inputs.length; i++) {
     let input = inputs[i];
@@ -31,16 +33,19 @@ const getInitValues = () => {
   }
 };
 
+// TOGGLE CLEAR BUTTON PROMPT BUTTONS
 const clearButtonConfirmationMessage = () => {
   saveButton.classList.toggle("hidden");
   clearButton.classList.toggle("hidden");
   formButtonsMessage.classList.toggle("hidden");
 };
 
+// HANDLE WHEN ENTER KEY IS PRESSED ON INPUT
 form.addEventListener("keyup", (e) => {
   if(e.key === "Enter") saveButton.click();
 });
 
+// HANDLE BUTTON CLICKS IN TWITCHKEYS MENU
 formButtonsContainer.addEventListener("click", e => {
   let input = "";
   let target = e.target;
