@@ -3,7 +3,7 @@
 
   "name": "TwitchKeys",
   "version": "0.1",
-  "description": "An extension to add hot keys for twitch.tv emotes in chat.",
+  "description": "TwitchKeys allows you to add hot keys for quick emote use in Twitch chat.",
   "icons": {
     "128": "./images/TwitchKeys.png"
   },
